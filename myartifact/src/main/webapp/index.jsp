@@ -42,7 +42,7 @@
 		<h2>Hobbies and Interests</h2>
 		<p>In her free time, Anu enjoys reading, writing, and painting. She is also passionate about volunteering and giving back to her community. She regularly participates in charity events and has been involved in various social causes over the years.</p>
 		<h2>Career and Education</h2>
-		<p>Anu has a Bachelor's degree in Education and is currently pursuing her Master's degree in Social Work. She is deeply committed to making a difference in people's lives, particularly those who are marginalized or disadvantaged. She hopes to use her education and experience to empower others and promote social justice.</p>
+		<p>Anu has a Bachelor's degree in Computer Science. She hopes to use her education and experience to empower others and promote social justice.</p>
 		<h2>Conclusion</h2>
 		<p>In conclusion, Anu is a rare gem in a world that can sometimes be cynical and self-centered. Her honesty, kindness, and compassion are a testament to her character and values, and she serves as a role model for others to follow.</p>
 	</div>
