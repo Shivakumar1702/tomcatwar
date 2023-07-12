@@ -1,7 +1,7 @@
 job("java-maven-build-DSL"){
     
     scm{
-        github('https://github.com/Shivakumar1702/tomcatwar', 'master')
+        github('Shivakumar1702/tomcatwar', 'master')
     }
     triggers{
         scm('* * * * *')
