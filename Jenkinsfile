@@ -19,5 +19,11 @@ pipeline {
                 archiveArtifacts artifacts: '**/*.war', followSymlinks: false
             }
         }
+
+        stage('deploy') {
+            steps {
+                deploy adapters: [tomcat9(credentialsId: '85003a7b-e5db-465c-add0-10695347434e', path: '', url: 'localhost:8080')], contextPath: '/', onFailure: false, war: '**/*.war'
+            }
+        }
     }
 }
