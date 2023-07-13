@@ -15,3 +15,7 @@ pipeline {
         stage ('publish') {
             steps {
                 echo 'this is artifact publish steps'
+            }
+        }
+    }
+}
