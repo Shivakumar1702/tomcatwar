@@ -1,17 +1,17 @@
-job("java-maven-build-DSL"){
-    
-    scm{
-        github('Shivakumar1702/tomcatwar', 'master')
-    }
-    triggers{
-        scm('* * * * *')
-    }
-    steps{
-        maven('clean package', 'myartifact/pom.xml')
-    }
-    publishers{
-        archiveArtifacts '**/*.war'
-    }
+pipeline {
+    agent any
+    stages {
+        stage ('Init') {
+            steps {
+                echo 'this is the git checkout step'
+            }
+        }
 
-    
-}
+        stage ('build') {
+            steps {
+                echo 'this is the project build step'
+            }
+        }
+        stage ('publish') {
+            steps {
+                echo 'this is artifact publish steps'
