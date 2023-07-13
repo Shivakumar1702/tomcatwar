@@ -1,30 +1,22 @@
 pipeline {
     agent any
     stages {
-        stage ('Init') {
+
+        stage('git checkout') {
             steps {
-                echo 'this is the git checkout step'
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Shivakumar1702/tomcatwar.git']])
             }
         }
 
-        stage ('build') {
+        stage('maven build') {
             steps {
-                echo 'this is the project build step'
+                bat 'mvn -f myartifact/pom.xml clean package'
             }
         }
-        stage ('test') {
+
+        stage('archive artifacts') {
             steps {
-                echo 'this is artifact test steps'
-            }
-        }
-        stage ('publish') {
-            steps {
-                echo 'this is artifact publish steps'
-            }
-        }
-        stage ('deploy') {
-            steps {
-                echo 'this is artifact deploy steps'
+                archive '**/*.war'
             }
         }
     }
