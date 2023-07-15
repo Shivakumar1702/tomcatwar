@@ -2,7 +2,7 @@ pipeline {
     agent {
         node {
             label 'MASTER_NODE'
-            customWorkspace 'C:\\Users\\Shiva Kumar Allam\\OneDrive\\Desktop'
+            // customWorkspace 'C:\\Users\\Shiva Kumar Allam\\OneDrive\\Desktop'
         }
     }
     stages {
