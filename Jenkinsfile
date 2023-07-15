@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        node {
+            label 'MASTER_NODE'
+            customWorkspace 'C:\\Users\\Shiva Kumar Allam\\OneDrive\\Desktop'
+        }
+    }
     stages {
 
         stage('git checkout') {
